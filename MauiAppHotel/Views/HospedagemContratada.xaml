@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.HospedagemContratada"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="{StaticResource Gray100}">
+             BackgroundColor="{StaticResource Gray200}">
     
     <VerticalStackLayout VerticalOptions="CenterAndExpand">
         
@@ -13,28 +13,40 @@
                FontSize="50"
                HorizontalTextAlignment="Center"/>
 
-        <Frame Margin="10">
-            <HorizontalStackLayout>
+        <Frame Margin="10"
+               BackgroundColor="LightBlue">
+            <HorizontalStackLayout HorizontalOptions="Center">
                 <HorizontalStackLayout>
-                    <Label Text="Adultos: "/>
+                    <Label Text="Adultos: "
+                           FontFamily="Kalam-Bold"
+                           TextColor="{StaticResource MidnightBlue}"/>
                     <Label Text="2"
                            TextColor="{StaticResource MidnightBlue}"/>
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout>
-                    <Label Text="Crianças: "/>
+                    <Label Text="Crianças: "
+                           FontFamily="Kalam-Bold"
+                           TextColor="{StaticResource MidnightBlue}"/>
                     <Label Text="1"
                            TextColor="{StaticResource MidnightBlue}"/>
                 </HorizontalStackLayout>
             </HorizontalStackLayout>
         </Frame>
 
-        <Frame Margin="10">
+        <Frame Margin="10"
+               BackgroundColor="LightBlue">
             <Grid ColumnDefinitions="*, *, *"
                   RowDefinitions="Auto, Auto">
-                <Label Grid.Row="0" Grid.Column="0" Text="Check-in"/>
-                <Label Grid.Row="0" Grid.Column="1" Text="Check-out"/>
-                <Label Grid.Row="0" Grid.Column="2" Text="Estadia"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="Check-in"
+                       FontFamily="Kalam-Bold"
+                        TextColor="{StaticResource MidnightBlue}"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="Check-out"
+                       FontFamily="Kalam-Bold"
+                       TextColor="{StaticResource MidnightBlue}"/>
+                <Label Grid.Row="0" Grid.Column="2" Text="Estadia"
+                       FontFamily="Kalam-Bold"
+                       TextColor="{StaticResource MidnightBlue}"/>
 
                 <Label Grid.Row="1" Grid.Column="0" Text="27/05/2024"/>
                 <Label Grid.Row="1" Grid.Column="1" Text="30/05/2024"/>
@@ -42,14 +54,18 @@
             </Grid>
         </Frame>
 
-        <Frame Margin="10">
-            <HorizontalStackLayout>
-                <Label Text="Valor Total: "/>
+        <Frame Margin="10"
+               BackgroundColor="LightBlue">
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Label Text="Valor Total: "
+                       FontFamily="Kalam-Bold"
+                       TextColor="{StaticResource MidnightBlue}"/>
                 <Label Text="R$ 750,00"/>
             </HorizontalStackLayout>
         </Frame>
 
         <Button Text="Voltar"
+                BackgroundColor="DarkBlue"
                 HorizontalOptions="Center"
                 Clicked="Button_Clicked"/>
     </VerticalStackLayout>
