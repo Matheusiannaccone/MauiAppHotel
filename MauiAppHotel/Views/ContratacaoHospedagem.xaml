@@ -11,7 +11,7 @@
         <Label Text="Cálculo da Diária"
                 FontFamily="Kalam"
                 FontSize="50"
-                TextColor="{StaticResource Primary}"/>
+                TextColor="{StaticResource MidnightBlue}"/>
 
         <Frame Padding="10">
             <VerticalStackLayout>
@@ -19,24 +19,28 @@
                       ColumnDefinitions="*, *, 2*">
                     
                     <Label Grid.Row="0" Grid.Column="0"
-                           Text="Adultos:"/>
+                           Text="Adultos:"
+                           TextColor="{StaticResource MidnightBlue}"
+                           FontFamily="Kalam"/>
 
                     <Label Grid.Row="0" Grid.Column="1"
-                           TextColor="{StaticResource Primary}"
+                           TextColor="{StaticResource MidnightBlue}"
                            Text="{Binding Value}"
                            BindingContext="{x:Reference stp_adultos}"/>
 
                     <Stepper Grid.Row="0" Grid.Column="2"
                              x:Name="stp_adultos"
-                             Minimum="0"
+                             Minimum="1"
                              Maximum="10"
                              Increment="1"/>
 
                     <Label Grid.Row="1" Grid.Column="0"
-                           Text="Crianças:"/>
+                           Text="Crianças:"
+                           TextColor="{StaticResource MidnightBlue}"
+                           FontFamily="Kalam"/>
 
                     <Label Grid.Row="1" Grid.Column="1"
-                           TextColor="{StaticResource Primary}"
+                           TextColor="{StaticResource MidnightBlue}"
                            Text="{Binding Value}"
                            BindingContext="{x:Reference stp_criancas}"/>
 
@@ -48,24 +52,35 @@
 
                 </Grid>
 
-                <Label Text="Escolha sua Suíte"/>
+                <Label Text="Escolha sua Suíte"
+                       TextColor="{StaticResource MidnightBlue}"
+                       FontSize="20"
+                       FontFamily="Kalam-Light"/>
 
                 <Picker x:Name="pck_quarto"
-                        Title="Selecione sua Acomodação"/>
+                        Title="Selecione sua Acomodação"
+                        FontFamily="Kalam-Bold"/>
 
                 <Frame Padding="10"
                        Margin="10">
                     <VerticalStackLayout>
-                        <Label Text="Período de Estadia"/>
+                        <Label Text="Período de Estadia"
+                               TextColor="{StaticResource MidnightBlue}"
+                               FontSize="20"
+                               FontFamily="Kalam-Light"/>
                         
                         <HorizontalStackLayout>
-                            <Label Text="Check-in"/>
+                            <Label Text="Check-in"
+                                   TextColor="{StaticResource MidnightBlue}"
+                                   FontFamily="Kalam"/>
                             <DatePicker x:Name="dtpck_checkin"
                                         Format="dd/MM/yyyy"/>
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout>
-                            <Label Text="Check-out"/>
+                            <Label Text="Check-out"
+                                   TextColor="{StaticResource MidnightBlue}"
+                                   FontFamily="Kalam"/>
                             <DatePicker x:Name="dtpck_checkout"
                                         Format="dd/MM/yyyy"/>
                         </HorizontalStackLayout>
