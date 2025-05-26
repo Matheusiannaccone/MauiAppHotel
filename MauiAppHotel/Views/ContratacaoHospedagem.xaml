@@ -5,13 +5,13 @@
              Title="ContratacaoHospedagem"
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="{StaticResource Gray200}">
+    
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10"
                          Spacing="10">
         <Label Text="Cálculo da Diária"
                 FontFamily="Kalam"
-                FontSize="50"
-                TextColor="{StaticResource MidnightBlue}"/>
+                FontSize="50"/>
 
         <Frame Padding="10" BackgroundColor="LightBlue">
             <VerticalStackLayout>
@@ -20,11 +20,9 @@
                     
                     <Label Grid.Row="0" Grid.Column="0"
                            Text="Adultos:"
-                           TextColor="{StaticResource MidnightBlue}"
                            FontFamily="Kalam"/>
 
                     <Label Grid.Row="0" Grid.Column="1"
-                           TextColor="{StaticResource MidnightBlue}"
                            Text="{Binding Value}"
                            BindingContext="{x:Reference stp_adultos}"/>
 
@@ -36,11 +34,9 @@
 
                     <Label Grid.Row="1" Grid.Column="0"
                            Text="Crianças:"
-                           TextColor="{StaticResource MidnightBlue}"
                            FontFamily="Kalam"/>
 
                     <Label Grid.Row="1" Grid.Column="1"
-                           TextColor="{StaticResource MidnightBlue}"
                            Text="{Binding Value}"
                            BindingContext="{x:Reference stp_criancas}"/>
 
@@ -53,7 +49,6 @@
                 </Grid>
 
                 <Label Text="Escolha sua Suíte"
-                       TextColor="{StaticResource MidnightBlue}"
                        FontSize="20"
                        FontFamily="Kalam-Light"/>
 
@@ -65,24 +60,22 @@
                 <Frame Padding="10"
                        Margin="10"
                        BackgroundColor="LightCoral">
-                    <VerticalStackLayout>
+                    <VerticalStackLayout Spacing="10">
                         <Label Text="Período de Estadia"
-                               TextColor="{StaticResource MidnightBlue}"
+                               
                                FontSize="20"
                                FontFamily="Kalam-Light"/>
                         
-                        <HorizontalStackLayout>
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                             <Label Text="Check-in"
-                                   TextColor="{StaticResource MidnightBlue}"
                                    FontFamily="Kalam"/>
                             <DatePicker x:Name="dtpck_checkin"
                                         DateSelected="dtpck_checkin_DateSelected"
                                         Format="dd/MM/yyyy"/>
                         </HorizontalStackLayout>
 
-                        <HorizontalStackLayout>
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                             <Label Text="Check-out"
-                                   TextColor="{StaticResource MidnightBlue}"
                                    FontFamily="Kalam"/>
                             <DatePicker x:Name="dtpck_checkout"
                                         Format="dd/MM/yyyy"/>
@@ -91,7 +84,6 @@
                 </Frame>
 
                 <Button Text="Avançar"
-                        BackgroundColor="DarkBlue"
                         Clicked="Button_Clicked"/>
             </VerticalStackLayout>
         </Frame>

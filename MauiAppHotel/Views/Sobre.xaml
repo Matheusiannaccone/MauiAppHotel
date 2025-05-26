@@ -19,85 +19,71 @@
             <Label Grid.Row="0" Grid.Column="0"
                    Text="Sobre o Desenvolvedor:"
                    FontFamily="Lubrifont"
-                   FontSize="20"
                    TextColor="{StaticResource Magenta}"/>
 
             <Label Grid.Row="0" Grid.Column="1"
                    Text="Nome:"
                    FontFamily="Lubrifont"
-                   FontSize="20"
                    TextColor="{StaticResource Magenta}"/>
 
             <Label Grid.Row="0" Grid.Column="2"
                    Text="Matheus Iannaccone"
                    FontFamily="Lubrifont"
-                   FontSize="20"
                    TextColor="{StaticResource Magenta}"/>
 
             <Label Grid.Row="1" Grid.Column="1"
                    Text="Idade:"
                    FontFamily="Lubrifont"
-                   FontSize="20"
                    TextColor="{StaticResource Magenta}"/>
 
             <Label Grid.Row="1" Grid.Column="2"
                    Text="20 anos"
                    FontFamily="Lubrifont"
-                   FontSize="20"
                    TextColor="{StaticResource Magenta}"/>
 
             <Label Grid.Row="2" Grid.Column="1"
                    Text="Curso:"
                    FontFamily="Lubrifont"
-                   FontSize="20"
                    TextColor="{StaticResource Magenta}"/>
 
             <Label Grid.Row="2" Grid.Column="2"
                    Text="Desenvolvimento de Sistemas"
                    FontFamily="Lubrifont"
-                   FontSize="20"
                    TextColor="{StaticResource Magenta}"/>
 
             <Label Grid.Row="3" Grid.Column="0"
                    Text="Sobre o Aplicativo"
                    FontFamily="Lubrifont"
-                   FontSize="20"
                    TextColor="{StaticResource Magenta}"/>   
 
             <Label Grid.Row="3" Grid.Column="1"
                    Text="Nome:"
                    FontFamily="Lubrifont"
-                   FontSize="20"
                    TextColor="{StaticResource Magenta}"/>
 
             <Label Grid.Row="3" Grid.Column="2"
                    Text="MauiAppHotel"
                    FontFamily="Lubrifont"
-                   FontSize="20"
                    TextColor="{StaticResource Magenta}"/>
 
             <Label Grid.Row="4" Grid.Column="1"
                    Text="Função:"
                    FontFamily="Lubrifont"
-                   FontSize="20"
                    TextColor="{StaticResource Magenta}"/>
 
             <Label Grid.Row="4" Grid.Column="2"
                    Text="Agendamento de suítes"
                    FontFamily="Lubrifont"
-                   FontSize="20"
                    TextColor="{StaticResource Magenta}"/>
 
             <Label Grid.Row="5" Grid.Column="1"
                    Text="Ano de Desenvolv.:"
                    FontFamily="Lubrifont"
-                   FontSize="20"
                    TextColor="{StaticResource Magenta}"/>
 
             <Label Grid.Row="5" Grid.Column="2"
                    Text="2025"
                    FontFamily="Lubrifont"
-                   FontSize="20"
                    TextColor="{StaticResource Magenta}"/>
         </Grid>
 
@@ -105,6 +91,7 @@
                 FontFamily="Lubrifont"
                 FontSize="30"
                 TextColor="{StaticResource OffBlack}"
+                Background="Wheat"
                 Clicked="Button_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>

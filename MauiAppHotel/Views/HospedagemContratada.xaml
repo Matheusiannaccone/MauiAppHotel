@@ -7,7 +7,7 @@
     
     <VerticalStackLayout VerticalOptions="CenterAndExpand">
         
-        <Label Text="Suíte Super Luxo"
+        <Label Text="{Binding QuartoSelecionado.Descricao}"
                TextColor="{StaticResource MidnightBlue}"
                FontFamily="Kalam"
                FontSize="50"
@@ -15,42 +15,42 @@
 
         <Frame Margin="10"
                BackgroundColor="LightBlue">
-            <HorizontalStackLayout HorizontalOptions="Center">
-                <HorizontalStackLayout>
+            <StackLayout Orientation="Horizontal">
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                     <Label Text="Adultos: "
-                           FontFamily="Kalam-Bold"
-                           TextColor="{StaticResource MidnightBlue}"/>
-                    <Label Text="2"
-                           TextColor="{StaticResource MidnightBlue}"/>
+                           FontFamily="Kalam-Bold"/>
+                    <Label Text="{Binding QntAdultos}"/>
                 </HorizontalStackLayout>
 
-                <HorizontalStackLayout>
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                     <Label Text="Crianças: "
-                           FontFamily="Kalam-Bold"
-                           TextColor="{StaticResource MidnightBlue}"/>
-                    <Label Text="1"
-                           TextColor="{StaticResource MidnightBlue}"/>
+                           FontFamily="Kalam-Bold"/>
+                    <Label Text="{Binding QntCriancas}"/>
                 </HorizontalStackLayout>
-            </HorizontalStackLayout>
+            </StackLayout>
         </Frame>
 
         <Frame Margin="10"
                BackgroundColor="LightBlue">
             <Grid ColumnDefinitions="*, *, *"
-                  RowDefinitions="Auto, Auto">
+                  RowDefinitions="Auto, Auto"
+                  ColumnSpacing="10">
                 <Label Grid.Row="0" Grid.Column="0" Text="Check-in"
-                       FontFamily="Kalam-Bold"
-                        TextColor="{StaticResource MidnightBlue}"/>
+                       FontFamily="Kalam-Bold"/>
                 <Label Grid.Row="0" Grid.Column="1" Text="Check-out"
-                       FontFamily="Kalam-Bold"
-                       TextColor="{StaticResource MidnightBlue}"/>
+                       FontFamily="Kalam-Bold"/>
                 <Label Grid.Row="0" Grid.Column="2" Text="Estadia"
-                       FontFamily="Kalam-Bold"
-                       TextColor="{StaticResource MidnightBlue}"/>
+                       FontFamily="Kalam-Bold"/>
 
-                <Label Grid.Row="1" Grid.Column="0" Text="27/05/2024"/>
-                <Label Grid.Row="1" Grid.Column="1" Text="30/05/2024"/>
-                <Label Grid.Row="1" Grid.Column="2" Text="3"/>
+                <Label Grid.Row="1" Grid.Column="0"
+                       Text="{Binding DataCheckIn, StringFormat='{}{0:dd/MM/yyyy}'}"
+                       FontSize="15"/>
+                <Label Grid.Row="1" Grid.Column="1"
+                       Text="{Binding DataCheckOut, StringFormat='{}{0:dd/MM/yyyy}'}"
+                       FontSize="15"/>
+                <Label Grid.Row="1" Grid.Column="2"
+                       Text="{Binding Estadia}"
+                       FontSize="15"/>
             </Grid>
         </Frame>
 
@@ -58,14 +58,13 @@
                BackgroundColor="LightBlue">
             <HorizontalStackLayout HorizontalOptions="Center">
                 <Label Text="Valor Total: "
-                       FontFamily="Kalam-Bold"
-                       TextColor="{StaticResource MidnightBlue}"/>
-                <Label Text="R$ 750,00"/>
+                       FontFamily="Kalam-Bold"/>
+                <Label Text="{Binding ValorTotal, StringFormat='{}{0:c}'}"
+                       FontSize="15"/>
             </HorizontalStackLayout>
         </Frame>
 
         <Button Text="Voltar"
-                BackgroundColor="DarkBlue"
                 HorizontalOptions="Center"
                 Clicked="Button_Clicked"/>
     </VerticalStackLayout>
